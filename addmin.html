@@ -1,0 +1,201 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>SURPRICE LUCKSON</title>
+	 <link rel="icon" type="images/facebook_icon" href="images/logod.png" />
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	 <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
+ </head>
+ <body>
+<!--facebook page-->
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+<!--facebook page-->
+
+	 <header>
+		 <div class="logo">
+			 <h1 class="logo-tete "><span>SURPRICE</span>Luckson</h1>
+		 </div>
+		 <i class="fa f-bars menu-toggle"></i>
+		 <ul class="nav">
+			 <li><a href="#">About</a></li>
+			 <li><a href="#">Services</a></li>
+			 <li><a href="#">Resume</a></li>
+			 <li><a href="#">Contact</a></li>
+			 <!-- <li><a href="Sing up"></a></li>
+			 <li><a href="Login"></a></li> -->
+			 <li>
+				 <a href="#">
+				 <i class="fa fa-user"></i>	
+				  Surprice Luckson
+				 <i class="fa fa-chevron-down"></i>
+				 </a>
+					 <ul>
+						 <li><a href="#">Dashboard</a></li>
+						 <li><a href="#" class="logout">Log out</a></li>
+					 </ul>
+			 </li>
+		 </ul>
+	 </header>
+ 
+	 
+
+		<div class="admin-wrapper">
+
+			<div class="left-sidebar">
+				<ul>
+					<li><a href="#">Manager Post</a></li>
+					<li><a href="#">Manager User</a></li>
+					<li><a href="#">Manager Topics</a></li>
+
+				</ul>
+			</div>
+
+			<div class="admin-content">
+				<div class="buttom-group">
+					<a href="create.html" class="btn btn-big">Add Post</a>
+					<a href="index2.html" class="btn btn-big">Manager Post</a>
+				</div>
+				<div class="content">
+					<h2 class="page-title">Manager Post</h2>
+					<table>
+					<thead>
+
+						<th>SN</th>
+						<th>Title</th>
+						<th>Autor</th>
+						<th colspan="3">Action</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>This is the first post</td>
+							<td>Surprice</td>
+							<td><a href="#" class="edit">edit</a></td>
+							<td><a href="#" class="delete">delete</a></td>
+							<td><a href="#" class="publish">publish</a></td>
+						</tr>
+						<tr>
+								<td>2</td>
+								<td>This is the second post</td>
+								<td>Luckson</td>
+								<td><a href="#" class="edit">edit</a></td>
+								<td><a href="#" class="delete">delete</a></td>
+								<td><a href="#" class="publish">publish</a></td>
+							</tr>
+					</tbody>
+				</table>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	 <!--footer -->
+	 <div class="footer">
+		 <div class="footer-content ">
+ 
+			 <di class="footer-section About">
+				 <h1 class="logo-text"><span>SURPRICE</span>Luckson</h1>
+				 <p>
+						 This has been tested on Outlook 2000-2013, Hotmail, Yahoo! Mail,
+						  AOL Mail, Apple Mail, Lotus Notes, Android, iPhone, and Windows
+						   Phone and displays the correct link based on the platform.
+				 </p>
+				 <div class="contact">
+					 <span><i class="fas fa-phone">&nbsp; (+509) 44-55-38-76</i></span>
+					 <span><i class="fas fa-envelope">&nbsp; lucksonsurprice94@gmail.com</i></span>
+				 </div>
+				 <div class="socials">
+					 <a href="#"><i class="fab fa-facebook"></i></a>
+					 <a href="#"><i class="fab fa-instagram"></i></a>
+					 <a href="#"><i class="fab fa-twitter"></i></a>
+					 <a href="#"><i class="fab fa-youtube"></i></a>
+ 
+				 </div>
+			 </di>
+ 
+			 <di class="footer-section links">
+				 <h2>Quick links</h2>
+				 <br>
+				 <ul>
+					 <a href="#"><li>Events</li></a>
+					 <a href="#"><li>Team</li></a>
+					 <a href="#"><li>Mentores</li></a>
+					 <a href="#"><li>Gallry</li></a>
+					 <a href="#"><li>Terms and conditions</li></a>
+				 </ul>
+			 </di>
+			 <di class="footer-section contact-form">
+				 <h2>Contacts us</h2>
+				 <br>
+				 <form action="indext.html" method="post">
+					 <input type="email" name="email" class="text-input contact-input" placeholder="your email adress....">
+					 <textarea name="message" row"6" class="text-input contact-input" placeholder="Enter your messages..."></textarea>
+					 <button type"submit" class="btn btn-big contact-btn"><i class="fas fa-envelope"></i>  Send</button>
+				 </form>
+			 </di>
+ 
+		 </div>
+ 
+		 <div class="footer-bottom">
+			 &copy; 2019 ||  luckson08.github.io | designed by Surprice Luckson
+		 </div>
+	 </div>
+ 
+ 
+	 <!--jquery -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	 <!--carouel -->
+	 <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
+	 <script src="js/scripts.js"></script>
+ 
+	 <script>
+
+	 
+	 $('.post-wrapper').slick({
+	 slidesToShow: 3,
+	 slidesToScroll: 1,
+	 autoplay: true,
+	 autoplaySpeed: 2000,
+	 nextArrow: $('.next'),
+	 prevArrow: $('.prev'),
+ 
+	 responsive: [
+	 {
+	   breakpoint: 1024,
+	   settings: {
+		 slidesToShow: 3,
+		 slidesToScroll: 3,
+		 infinite: true,
+		 dots: true
+	   }
+	 },
+	 {
+	   breakpoint: 600,
+	   settings: {
+		 slidesToShow: 2,
+		 slidesToScroll: 2
+	   }
+	 },
+	 {
+	   breakpoint: 480,
+	   settings: {
+		 slidesToShow: 1,
+		 slidesToScroll: 1
+	   }
+	 }
+	 // You can unslick at a given breakpoint now by adding:
+	 // settings: "unslick"
+	 // instead of a settings object
+   ]
+   });
+	 
+	 </script>
+ </body>
+ </html>

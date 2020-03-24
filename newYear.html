@@ -1,0 +1,95 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>SURPRICE LUCKSON</title>
+	 <link rel="icon" type="images/facebook_icon" href="images/logod.png" />
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	 <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
+ </head>
+ <body>
+<!--facebook page-->
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+<!--facebook page-->
+
+	 <header>
+		 <div class="logo">
+			 <h1 class="logo-tete "><span>SURPRICE</span>Luckson</h1>
+		 </div>
+		 <i class="fa f-bars menu-toggle"></i>
+		 <ul class="nav">
+			 <li><a href="index.html">About</a></li>
+			 <li><a href="#">Services</a></li>
+			 <li><a href="#">Resume</a></li>
+			 <li><a href="register.html">Contact</a></li>
+			 <!-- <li><a href="Sing up"></a></li>
+			 <li><a href="Login"></a></li> -->
+			 <li>
+				 <a href="#">
+				 <i class="fa fa-user"></i>	
+				  Surprice Luckson
+				 <i class="fa fa-chevron-down"></i>
+				 </a>
+					 <ul>
+						 <li><a href="#">Dashboard</a></li>
+						 <li><a href="#" class="logout">Log out</a></li>
+					 </ul>
+			 </li>
+		 </ul>
+	 </header>
+
+	 
+<div class="cont">
+<h2><span>countdown to new year </span> 2020</h2>
+<div class="countdown">
+<div id="jour">NA</div>
+<div id="heure">NA</div>
+<div id="minute">NA</div>
+<div id="second">NA</div>
+</div>
+</div>
+
+
+
+ <iframe src="http://free.timeanddate.com/clock/i72gf7sv/n709/fs48/pc900/ftb/th2" frameborder="0" width="325" height="57"></iframe>
+
+
+
+<script>
+ var countDate = new Date('jan 1, 2020 00:00:00').getTime();
+ function nweYear(){
+       var now = new Date().getTime();
+       gap = countDate - now;
+
+       var seconde = 1000;
+       var minute = seconde * 60;
+       var heur = minute * 60;
+       var jour = heure * 24;
+
+       var d = Math.floor(gap / jour());
+       var h = Math.floor((gap % jour()) / heure());
+       var m = Math.floor((gap % heure()) / minute());
+       var s = Math.floor((gap % minute()) / seconde());
+
+       document.getElementById('jour').innerText = d;
+       document.getElementById('heure').innerText = h;
+       document.getElementById('minute').innerText = m;
+       document.getElementById('second').innerText = s;
+
+
+
+
+ }
+
+setInterval(function(){
+nweYear();
+
+},1000)
+</script>
+
+
+ </body>
+ </html>
